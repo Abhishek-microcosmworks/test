@@ -1,5 +1,5 @@
 import './App.css';
-import { Source } from '@abhishek_vats/bit-demo-production.youtube-components-lib';
+import { Source } from '@vlogrinc/vlogr.youtube-components-lib';
 import YOUTUBEICON from '../src/assets/images/g10.png';
 import spinner  from '../src/assets/images/spinner.gif';
 
