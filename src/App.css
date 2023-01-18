@@ -1,10 +1,75 @@
+html {
+  text-align: -webkit-center;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Noto Sans';
+  max-width: 400px !important;
+  background: #fcfcfc;
+  position: relative;
+  text-align: center;
+}
+
 .App {
   text-align: center;
+  max-width: 400px;
+  width: 95%;
+  overflow: hidden;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.logo {
+  margin-right: 20px;
+  min-width: 100%;
+  float: right;
+  max-width: 400px;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.logo-loading {
+  min-width: 100%;
+  max-width: 400px;
+  margin-top: 5px;
+  height: 30px;
+}
+
+.disconnect {
+  margin-left: 5px;
+  text-align: left;
+  max-width: 400px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.search {
+  width: 100%;
+}
+
+.search-input {
+  background-image: url('./assets/images/search.png') !important;
+  width: 78%;
+  margin-top: 20px;
+  margin-left: -5px;
+  background-color: #f1f2f4 !important;
+  border-radius: 20px;
+  height: 38px;
+  padding-bottom: 30px;
+  border: none;
+  padding: 5px 12px 5px 35px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 5px;
+}
+
+.react-player{
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,6 +89,37 @@
   color: white;
 }
 
+.item {
+  width: auto;
+  flex: 100% ;
+  background-color: #fff;
+  z-index: 99;
+  max-height: 270px; 
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-description{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  font-weight: 457;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.span-title{ 
+  font-size: 14px;
+  color: #000000;
+}
+
+.span-channel-name{
+  font-size: 11px;
+  color: #404040;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +131,134 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.connect-button {
+  background: linear-gradient(179.32deg, #3dbbfd -91.95%, #0179ff 99.45%);
+  border-radius: 15px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  font: 'Noto Sans';
+  width: 70%;
+  border: none;
+  color: #ffffff;
+}
+
+.get-started {
+  font-size: 18px;
+  font-weight: 556;
+  max-width: 80%;
+}
+
+.directory-div {
+  max-width: 400px;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  width: 93%;
+  margin-left: -8%;
+}
+
+.top-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: #fcfcfc;
+  width: 100%;
+  max-width: 400px;
+}
+
+.directory-div::-webkit-scrollbar {
+  display: none;
+}
+
+.directory-display {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  margin: 5px;
+  text-align: center;
+  background-color: #f1f2f4;
+}
+
+.directory-name {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+.footer {
+  max-width: 400px;
+  bottom: 10%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.progress_bar {
+  margin: 10px;
+  text-align: center;
+}
+
+progress {
+  border: none;
+  width: 200px;
+  height: 5px;
+  background: #128cfe;
+  border-radius: 2.5px;
+}
+
+progress::-webkit-progress-value {
+  background: #128cfe;
+  border-radius: 2.5px;
+}
+
+progress::-moz-progress-bar {
+  background: #ecf3ff;
+}
+
+progress::-webkit-progress-value {
+  background: #128cfe;
+  border-radius: 2.5px;
+}
+
+progress::-webkit-progress-bar {
+  background: #ecf3ff;
+  border-radius: 2.5px;
+}
+
+.cancel-button {
+  font-size: 18px;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 270px;
+  height: 50px;
+  position: relative;
+  margin-top: 25%;
 }

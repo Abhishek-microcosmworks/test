@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Source } from '@abhishek_vats/bit-demo-production.youtube-components-lib';
+import YOUTUBEICON from '../src/assets/images/g10.png';
+import spinner  from '../src/assets/images/spinner.gif';
+
+const CLIENT_ID = process.env.REACT_APP_YOUTUBE_CLIENT_ID;
+const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Source
+         youtubeIcon={YOUTUBEICON} 
+         spinner={spinner}
+         clientId={CLIENT_ID} 
+         apiKey={API_KEY}
+      />
     </div>
   );
 }
